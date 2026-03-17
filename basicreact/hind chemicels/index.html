@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hind Chemisales</title>
+<link rel="stylesheet" href="hind.css">
+</head>
+
+<body>
+
+<header>
+<div class="container">
+
+<h1>Hind Chemisales</h1>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="product.html">Products</a></li>
+<li><a href="Enquiry.html">Enquiry</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+</div>
+</header>
+
+
+<!-- IMAGE SLIDER -->
+
+<section class="slider">
+
+<div class="slides">
+
+<img src="banner1.jpg" class="slide">
+<img src="banner2.jpg" class="slide">
+
+</div>
+
+<div class="slider-text">
+<h2>Welcome To Hind Chemisales</h2>
+<p>More than 30 years of experience in chemical trading and supply.</p>
+</div>
+
+</section>
+
+
+<section class="about container">
+<h2>About Us</h2>
+<p>
+Hind Chemisales has more than 30 years of experience in the chemical trade.
+The company specializes in supplying industrial chemicals and ensures
+quality materials and reliable services for customers.
+</p>
+</section>
+
+
+<sectiion class="mission container">
+<h2>Our Mission</h2>
+<p>
+To make reputation synonymous with quality, competitiveness and reliability
+while maintaining fairness and transparency in business.
+</p> 
+</sectiion>
+
+
+<section class="products container">
+
+<h2>Our Products</h2>
+
+<div class="product-grid">
+
+<div class="product">Hydrochloric Acid</div>
+<div class="product">Caustic Soda Flakes</div>
+<div class="product">Sulphuric Acid</div>
+<div class="product">Nitric Acid</div>
+<div class="product">Hydrogen Peroxide</div>
+<div class="product">Sodium Hypochlorite</div>
+<div class="product">Chlorine Gas</div>
+<div class="product">Soda Ash</div>
+<div class="product">Acetic Acid</div>
+
+</div>
+
+</section>
+
+
+<section class="contact container">
+
+<h2>Contact Us</h2>
+
+<p><strong>Address:</strong> MIA Alwar Rajasthan 301001</p>
+<p><strong>Phone:</strong> 7878431700</p>
+<p><strong>Email:</strong> ns757641@gmail.com</p>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Email Address" required>
+<input type="text" placeholder="Phone Number">
+<textarea placeholder="Your Message"></textarea>
+<button type="submit">Send Enquiry</button>
+
+</form>
+
+</section>
+
+
+<footer>
+<p>© 2026 Hind Chemisales. All Rights Reserved.</p>
+</footer>
+
+
+<script>
+let slideIndex = 0;
+const slides = document.querySelectorAll(".slides img");
+
+function showSlides(){
+slides.forEach((img)=>{
+img.style.display="none";
+});
+
+slideIndex++;
+
+if(slideIndex > slides.length){
+slideIndex = 1;
+}
+
+slides[slideIndex-1].style.display="block";
+
+setTimeout(showSlides,3000);
+}
+
+showSlides();
+</script>
+
+</body>
+</html>
